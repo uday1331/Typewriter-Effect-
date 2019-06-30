@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+#typewriter{
+    margin: auto;
+    display: flex;
+    align-content: center;
+    vertical-align: middle;
+    color: gray;
+    font-size: 5rem;
+    font-family: sans-serif;
+}
+
+#typewriter-text{
+    margin: 25px 0 0 0;
+    font-weight: 500;
+}
+
+
+#cursor{
+    margin: 0;
+    font-size: 1.5em;
+    color: cadetblue;
+    font-weight: 100;
+}
