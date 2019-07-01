@@ -21,6 +21,7 @@ function DeleteCurrentText(){
     onScreenText.style.background = "whitesmoke";
     //removes all in tag text
     onScreenText.innerHTML = "";
+    cursor.innerHTML = "|";
 }
 //--------------------------------------------------------------------------
 
@@ -47,6 +48,7 @@ function StartTyping(string, delay, speed){
 function DeleteAnimation(delay){
     setTimeout(function(){
         onScreenText.style.background = "#ACCEF7";
+        cursor.innerHTML = "";
         //reminder: nested setTimeout are dependent
         // so the second one is called 500ms after the first and not after window is loaded
         setTimeout(DeleteCurrentText, 500);
